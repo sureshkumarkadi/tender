@@ -10,7 +10,18 @@
 #-------------------------------------------------------------------------------
 
 from selenium import webdriver
+import time
+
+
 
 browser = webdriver.Firefox()
 
-browser.get('http://google.co.in')
+browser.get('https://www.google.co.in/')
+
+assert browser.title == "Google"
+
+print browser.title
+
+time.sleep(2)
+#browser.close()
+
