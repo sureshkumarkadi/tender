@@ -12,16 +12,18 @@
 from selenium import webdriver
 import time
 
+browser = webdriver.Firefox(executable_path=r'C:\tender\FFDriver\geckodriver.exe')
 
-
-browser = webdriver.Firefox()
+time.sleep(2)
 
 browser.get('https://www.google.co.in/')
 
-assert browser.title == "Google"
+time.sleep(2)
+
+browser.title == 'Google'
 
 print browser.title
 
-time.sleep(2)
-#browser.close()
+
+browser.close()
 
