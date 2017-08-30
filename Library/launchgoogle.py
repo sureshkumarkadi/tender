@@ -32,6 +32,10 @@ browser.get('https://www.google.co.in/')
 
 time.sleep(2)
 
+print"pass"
+
+print"suresh"
+
 browser.title == 'Google'
 
 print browser.title
