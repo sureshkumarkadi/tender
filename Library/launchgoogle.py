@@ -10,9 +10,21 @@
 #-------------------------------------------------------------------------------
 
 from selenium import webdriver
+import os
 import time
+import sys
 
-browser = webdriver.Firefox(executable_path=r'C:\tender\FFDriver\geckodriver.exe')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print dir_path
+
+folder_path=os.path.abspath(os.path.join(dir_path, os.pardir))
+print folder_path
+
+sys.path.insert(0,folder_path+"\FFDriver")
+sys.path.insert(0,folder_path+"\IEDriver")
+sys.path.insert(0,folder_path+"\Library")
+
+browser = webdriver.Firefox(executable_path=folder_path+'\FFDriver\geckodriver.exe')
 
 time.sleep(2)
 
