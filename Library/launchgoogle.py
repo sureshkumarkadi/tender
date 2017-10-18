@@ -40,4 +40,5 @@ print browser.title
 browser.close()
 
 print"pass"
+print"fail"
 
