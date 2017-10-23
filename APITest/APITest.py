@@ -42,6 +42,7 @@ class ReopentenderusingRESTAPIclass(unittest.TestCase):
             print url
             print accesstoken
             time.sleep(1)
+            time.sleep(1)
             #return accesstoken
 
 
