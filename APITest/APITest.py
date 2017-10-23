@@ -14,13 +14,6 @@ import json
 import unittest
 import time
 
-##i = 0
-##
-##if i==0:
-##    for i in range(i,4):
-##        value = i * 2
-##        print [value],
-
 class ReopentenderusingRESTAPIclass(unittest.TestCase):
       def test_authunticateAPI(self):
             time.sleep(1)
@@ -50,8 +43,7 @@ class ReopentenderusingRESTAPIclass(unittest.TestCase):
             print accesstoken
             #return accesstoken
 
-if __name__ == '__main__':
-    unittest.main()
+
 
 
 
